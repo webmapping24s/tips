@@ -138,7 +138,10 @@
                 ` )
             }
         });
-        omnivore.topojson("landkreise.topojson", null, drawLandkreise).addTo(map);
+        let topoLayer = omnivore.topojson("landkreise.topojson", null, drawLandkreise).addTo(map);
+        topoLayer.on("ready", function() {
+            map.fitBounds(topoLayer.getBounds())
+        });
     </script>
 </body>
 
