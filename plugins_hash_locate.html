@@ -19,6 +19,9 @@
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
 
+    <!-- Leaflet Hash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-hash/0.2.1/leaflet-hash.js" integrity="sha512-2KBa5eJPxTH3HX7jCWrbO+NYNLV8xrnX5lDB7FTs9HFJ8jpO1MTV6MkmNNaia79k+xOk8q965FkqAjwEYCfDAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- eigene Stile -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto:wght@300&display=swap');
@@ -156,6 +159,7 @@
         }
         //loadGeoJSON("...");
 
+        new L.Hash(map);
     </script>
 </body>
 
